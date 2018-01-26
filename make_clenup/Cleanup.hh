@@ -3,6 +3,12 @@ template <typename T>
 
 class Cleanup
 {
+public:
+	Cleanup(T k);
+
+
+private:
+	T f_;
 
 
 };
