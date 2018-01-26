@@ -7,6 +7,7 @@ public:
 	Cleanup(T f_);
 	~Cleanup();
 
+
 private:
 	T f_;
 
