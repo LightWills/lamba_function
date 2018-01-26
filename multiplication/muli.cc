@@ -8,6 +8,18 @@ int main() {
 		return a;
 	};
 	std::cerr << l_ro() <<"\n";
+/*  EXO  1 **/
 
+	auto forward = [](int a)
+	{
+		return[a] (int b)
+		{
+			return a* b;
+		};
+	};
+
+auto f = forward(2);
+	std::cout<<f(2)<<std::endl;
+	std::cout<<f(2)<<std::endl;
 	return 0;
 }
