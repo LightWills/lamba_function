@@ -4,6 +4,12 @@
 template <typename T>
 
 #include "Cleanup.hh"
-Cleanup::Cleanup(T k)
-	:f_(k)
-{}
+
+
+Cleanup::Cleanup(T f_)
+	: f_(f_) {}
+
+Cleanup::~Cleanup()
+{
+	delete f_;
+}

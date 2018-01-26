@@ -4,14 +4,11 @@ template <typename T>
 class Cleanup
 {
 public:
-	Cleanup(T k);
-
+	Cleanup(T f_);
+	~Cleanup();
 
 private:
 	T f_;
 
 
 };
-
-
-#endif //DAY5_MAKECLEANUP_HH
